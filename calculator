@@ -1,0 +1,32 @@
+def cal():
+    print("Enter the first number:")
+    num1 = float(input())  # Allowing for decimal numbers
+    print("Enter the second number:")
+    num2 = float(input())  # Allowing for decimal numbers
+    
+    print("Select operation:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    
+    choice = input()
+    
+    if choice == '1':
+        result = num1 + num2
+    elif choice == '2':
+        result = num1 - num2
+    elif choice == '3':
+        result = num1 * num2
+    elif choice == '4':
+        if num2 != 0:
+            result = num1 / num2
+        else:
+            result = "Cannot divide by zero!"
+    else:
+        result = "Invalid choice"
+    
+    print("Result:", result)
+
+# Call the function
+cal()
